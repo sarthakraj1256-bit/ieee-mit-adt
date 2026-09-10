@@ -1,2 +1,0 @@
-import {guard,json,log} from './_helpers.js';
-export async function onRequestPut({request,env}){const bad=await guard(request,env);if(bad)return bad;const b=await request.json();for(const k of ['handle','subtitle','avatar_url'])if(k in b)await env.DB.prepare('INSERT INTO settings(key,value) VALUES(?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value').bind(k,String(b[k]??'')).run();await log(env,'Updated profile','Profile settings');return json({ok:true})}
