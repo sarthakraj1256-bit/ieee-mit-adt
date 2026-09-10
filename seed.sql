@@ -1,2 +1,0 @@
-INSERT OR IGNORE INTO settings(key,value) VALUES('handle','@ieeestbmitadt'),('subtitle','IEEE Student Branch MIT-ADT'),('avatar_url','/assets/avatar.svg');
-INSERT OR IGNORE INTO links(id,title,url,kind,position,published) VALUES('instagram','Instagram','https://www.instagram.com/ieeemitadtstb/','instagram',0,1),('join-ieee','Join IEEE','https://www.ieee.org/','ieee',1,1),('branch','IEEE Student Branch MIT-ADT','https://edu.ieee.org/in-mitadt/','globe',2,1);
