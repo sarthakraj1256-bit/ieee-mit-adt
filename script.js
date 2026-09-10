@@ -1,0 +1,1 @@
+document.querySelectorAll(".link-card").forEach((link)=>{link.addEventListener("click",()=>link.setAttribute("aria-busy","false"),{passive:true});});
